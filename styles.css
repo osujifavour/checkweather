@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url(./road-220058_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+    text-align: center;
+    color: #01125fb0;
+    transition: all 1s;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+
+.parent{
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+    padding: 20px;
+}
+#error {
+    display: none;
+    text-align: left;
+}
+
+#searchSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+#searchSection #citySubmit{
+    outline: 0;
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#searchSection #citySubmit img{
+    width: 12px;
+    height: auto;
+}
+button:hover{
+    border: none;
+}
+#searchSection #cityname{
+    outline: 0;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: 1px solid white;
+}
+
+#weather-icon{
+    margin-top: 20px;
+    width: 130px;
+    height: auto;
+}
+
+
+#data {
+    text-align: center;
+}
+#results {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: -7px;
+}
+#displayCity{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: -15px;
+}
+
+#moreDetails{
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+    align-items: center;    
+    margin-bottom: 50px;
+}
+#left, #right {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+#humidity{
+    font-size: 15px;
+    font-weight: bold;
+}
+#wind{
+    font-size: 15px;
+    font-weight: bold;
+}
+#hid {
+    display: none;
+}
+
+footer{
+    color: white;
+    margin-top: 20px;
+}

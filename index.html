@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Weather</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h2 id="welcome">Check The Current Weather Of Any City</h2>
+    <div class="parent">
+      <section id="searchSection">
+        <input
+          type="text"
+          id="cityname"
+          placeholder="Enter Any City"
+          spellcheck="false"
+        />
+        <button id="citySubmit"><img src="./search.png" /></button>
+      </section>
+      <div id="error">
+        <p>This City Does Not Exist</p>
+      </div>
+
+      <div id="hid">
+        <img src="./rain.png" alt="weather-icon" id="weather-icon" />
+
+        <div id="data" class="hid">
+          <p id="results">22°c</p>
+          <p id="displayCity">Belgium</p>
+        </div>
+
+        <div id="moreDetails" class="hid">
+          <div id="left">
+            <img src="./humidity.png" width="25px" height="25px" />
+            <article>
+              <p id="humidity">64%</p>
+              <p>Humidity</p>
+            </article>
+          </div>
+          <div id="right">
+            <img src="./wind.png" width="25px" height="25px" />
+            <article>
+              <p id="wind">18 km/h</p>
+              <p>Word Speed</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
